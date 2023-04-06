@@ -1,0 +1,400 @@
+/* Mobile */
+body{
+  padding: 10px;
+  background-color: #1a374b;
+  font-size: 100%; 
+  color: white;
+  line-height: 1.4;
+}
+
+h1{
+  font-family: 'Playfair Display', serif;
+  padding: 0.3cm;
+  font-size: 6vw; 
+  text-align: center;
+}
+
+h2{
+  font-family:'Abril Fatface', Georgia, serif;
+  font-size: 28px; 
+  text-align: center;
+  background-color:  #2a2a2a;
+}
+
+h3{
+  font-family:'Dancing Script', sans-serif;
+  font-size: 20px; 
+  color:rgb(159, 198, 248);
+}
+
+p{
+  font-family: 'Nunito', sans-serif;
+  margin:auto;
+  margin-bottom: 15px; 
+}
+
+
+a{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer{
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 2vh;
+}
+
+img.about_pic{
+  width: 100%;
+  padding: 5px; 
+  border-style: solid;
+  border-color: #2a2a2a;
+  border-width: 2px; 
+}
+
+li{
+  display: inline-block;
+  padding-right: 5px;
+}
+
+nav a {
+  font-family: Arial;
+  color: white;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: #2a2a2a;
+}
+
+nav ul li{
+  margin: 0;
+}
+
+nav li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1vh;
+  text-decoration: none;
+  font-size: 3vw; 
+  margin: 0 1vw;
+}
+
+
+nav ul{
+  flex-direction: column;
+}
+
+a {
+  display: inline;
+  color: rgb(159, 198, 248);
+}
+
+.current {
+  text-transform: uppercase;
+  background-color: rgb(159, 198, 248);
+  color: black;
+}
+
+.grid{
+  margin: 5px; 
+  display: grid;
+  grid-template-columns: 100%; 
+  grid-gap: 20px; 
+  row-gap: 10px;
+}
+
+.grid div{
+  border: 2px solid #2a2a2a; 
+  margin: 10px 0px; 
+}
+
+.grid h2{
+  /* margin-top: 20px; */
+  font-weight: bold;
+  text-align: center;
+}
+
+.grid p{
+  margin-bottom: 10px; 
+}
+
+.grid img{
+  width: 100%; 
+  margin: auto;
+  display: block;
+  border: 5px dashed rgb(159, 198, 248);
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  padding: 10px
+}
+
+.grid img:hover {
+  border-color: yellow;
+  transform: scale(1.1);
+}
+
+.grid img:nth-of-type(3n) {
+  background-color: yellow;
+}
+
+.neon-glow {
+  
+  color: #fff;
+  text-shadow: 0 0 1rem #fff,
+               0 0 2rem #f00,
+               0 0 3rem #f00,
+               0 0 4rem #f00,
+               0 0 7rem #f00,
+               0 0 8rem #f00,
+               0 0 10rem #f00,
+               0 0 15rem #f00;
+}
+
+
+.hover-button {
+  background-color: #2a2a2a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 12px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.hover-button:focus + .content {
+  display: block;
+}
+
+.hover-button:focus {
+  outline: none;
+}
+
+.content {
+  display: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.format {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  img{
+  animation: none;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+dd{
+  font-size: 25px;
+  color:rgb(159, 198, 248);
+}
+
+.paragraph{font-family: 'Nunito', sans-serif;
+  margin:auto;
+  margin-bottom: 15px; 
+  color: white;
+  font-size: 100%;
+}
+
+
+dt{
+  font-size: 35px;
+  text-align: center;
+  background-color:  #2a2a2a; 
+}
+
+.girlpwr{
+  background-image: url("../images/fem.jpeg");
+  background-attachment: fixed;     
+  background-position: center;  
+  background-repeat: no-repeat; 
+  background-size: cover;       
+  background-color: white;
+  min-height: 550px;                
+}
+/*
+.lit{
+  background-image: url("../images/lit.jpeg");
+  background-attachment: fixed;     
+  background-position: center;  
+  background-repeat: no-repeat; 
+  background-size: cover;       
+  background-color: white;
+  min-height: 450px;                
+}
+
+.hist{
+  background-image: url("../images/history.png");
+  background-attachment: fixed;     
+  background-position: center;  
+  background-repeat: no-repeat; 
+  background-size: cover;       
+  background-color: white;
+  min-height: 450px;                
+}
+*/
+
+.title{
+  font-size: 7vw;
+  padding-top: 100px;
+  color:#2a2a2a;
+  font-weight: bold;
+  
+}
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #2a2a2a;
+  color: white;
+  padding: 5px;
+  z-index: 999;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+.fa-female{
+  color:rgb(159, 198, 248);
+}
+
+/* Tablet View */
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 110%;
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 3.5vw;
+    padding: 0.25cm;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+  
+  nav li a {
+    font-size: 2vw;
+  }
+
+ 
+  nav ul{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  nav li {
+    width: 50%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .grid img {
+    width: 90%;
+    margin: auto;
+  }
+  dd {
+    font-size: 20px;
+  }
+  dt {
+    font-size: 30px;
+  }
+  .girlpwr {
+    min-height: 800px;
+  }
+  .title {
+    font-size: 5vw;
+    padding-top: 150px;
+  }
+}
+
+/* Large Screen View */
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 125%;
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 4vw;
+    padding: 0.3cm;
+  }
+  
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+  
+  nav li a {
+    font-size: 2vw;
+  }
+
+ 
+  nav ul{
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  nav li {
+    width: auto;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid div{
+    border: 10px solid #2a2a2a;
+    margin:25px 0px;
+  }
+
+  dd {
+    font-size: 30px;
+  }
+  dt {
+    font-size: 40px;
+  }
+  .girlpwr {
+    min-height: 800px;
+  }
+  .title {
+    font-size: 4vw;
+    padding-top: 200px;
+  }
+}
